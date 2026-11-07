@@ -1,6 +1,12 @@
-# Device Control App
+# Device Control App (`DeviceControl`)
 
-A modern desktop application built with **Electron** and **React** for controlling FPGA devices via serial communication. Features include real-time serial port communication, 24-channel DAC control, and an advanced serial monitor with filtering and export capabilities.
+[![Electron](https://img.shields.io/badge/Desktop-Electron-47848F)](https://www.electronjs.org/)
+[![React](https://img.shields.io/badge/Frontend-React_%2B_Vite-61DAFB)](https://react.dev/)
+[![Hardware Pair](https://img.shields.io/badge/FPGA_RTL-PIC__Control__FPGA-0071C5)](https://github.com/controlguy-ys/PIC_Control_FPGA)
+
+A modern desktop hardware-control workbench built with **Electron** and **React** for controlling **FPGA-based multi-channel DAC hardware (`MCP4922`)** via high-speed serial (UART) communication. Features include real-time serial port management, synchronized 24-channel DAC control, and an advanced serial protocol monitor with regex filtering and CSV/TXT export.
+
+> **Companion FPGA RTL Repository:** The Verilog hardware implementation (Cyclone V UART command parser, 288-bit channel buffer, 1 MHz SPI engine, and synchronized `LDAC` controller) is located in **[`PIC_Control_FPGA`](https://github.com/controlguy-ys/PIC_Control_FPGA)**.
 
 ## 📸 Screenshots
 
@@ -49,8 +55,8 @@ A modern desktop application built with **Electron** and **React** for controlli
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/googoles/DeviceControl.git
-   cd device-control-electron-app-new
+   git clone https://github.com/controlguy-ys/DeviceControl.git
+   cd DeviceControl
    ```
 
 2. **Install main dependencies**
